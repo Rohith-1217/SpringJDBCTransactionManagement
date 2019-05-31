@@ -22,10 +22,10 @@ public class CustomerDAOImpl implements CustomerDAO {
 
 		jdbcTemplate.update(queryMovie, new Object[] { movie.getId(),
 				movie.getName(),movie.getYear(),movie.getRating() });
-		System.out.println("Inserted into Customer Table Successfully");
+		System.out.println("Inserted into Movie Table Successfully");
 		jdbcTemplate.update(queryActor, new Object[] { movie.getId(),
 				movie.getActor().getActorname() });
-		System.out.println("Inserted into Address Table Successfully");
+		System.out.println("Inserted into Actor Table Successfully");
 	}
 
 }
